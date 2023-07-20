@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmail Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Webmail Client</h1>
+        <button id="loginButton">Login</button>
+        <button id="logoutButton" style="display: none;">Logout</button>
+    </header>
+
+    <main>
+        <section id="composeSection" style="display: none;">
+            <button id="composeButton">Compose Email</button>
+            <form id="composeForm" style="display: none;">
+                <input type="email" id="recipient" placeholder="Recipient" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="body" placeholder="Email Body" required></textarea>
+                <button id="sendButton">Send</button>
+            </form>
+        </section>
+
+        <section id="searchSection" style="display: none;">
+            <input type="text" id="searchBox" placeholder="Search Emails">
+        </section>
+
+        <section id="emailSection" style="display: none;">
+            <div id="emailList"></div>
+            <div id="emailContent"></div>
+        </section>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="mail.js"></script>
+    <script src="search.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#loginButton, #logoutButton, #composeButton, #sendButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#searchBox {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+}
+
+#emailList {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+    background-color: #f1f1f1;
+    height: 300px;
+    overflow: auto;
+}
+
+#emailContent {
+    float: right;
+    width: 65%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow: auto;
+}
+
+.emailItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.emailItem:hover {
+    background-color: #ddd;
+}
